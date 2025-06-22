@@ -1,13 +1,13 @@
 name: "rust-python-example"
 
 services:
-  set1:
-    build: ./set1
+  side-python:
+    build: ./side-python
     ports:
       - "5000:5000"
-  set2:
-    build: ./set2
+  side-rust:
+    build: ./side-rust
     stdin_open: true
     tty: true
     depends_on:
-      - set1
+      - side-python

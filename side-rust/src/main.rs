@@ -9,7 +9,7 @@ fn main() {
     io::stdin().read_line(&mut input).expect("Failed to read input.");
 
     let client = Client::new();
-    let response = client.post("http://set1:5000/process")
+    let response = client.post("http://side-python:5000/process")
     .body(input.trim().to_string())
     .send()
     .expect("Failed to send request.");
