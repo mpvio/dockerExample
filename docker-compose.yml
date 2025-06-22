@@ -1,0 +1,13 @@
+name: "rust-python-example"
+
+services:
+  set1:
+    build: ./set1
+    ports:
+      - "5000:5000"
+  set2:
+    build: ./set2
+    stdin_open: true
+    tty: true
+    depends_on:
+      - set1
