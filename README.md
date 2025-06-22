@@ -1,8 +1,8 @@
 ## Instructions
 Open CMD in dockerExample folder:
 
-docker-compose build
-docker-compose run --rm set2
+1. docker-compose build
+2. docker-compose run --rm set2
 
 ## Explanation
 Set1 is a Python FastAPI endpoint listening for a string from Set2 (Rust code)
